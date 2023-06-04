@@ -113,3 +113,21 @@
     letter-spacing: 0em;
     text-align: left;
 }
+
+.main{
+    width: 1065px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/inside-weather.jpg");
+    background-size: cover;
+}
+
+.main-box{
+    /*width: 56%*/
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
