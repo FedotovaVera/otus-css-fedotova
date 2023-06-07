@@ -14,10 +14,11 @@
     line-height: 115px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 10px 0px 20px 0px;
 }
 
 .main-subtitle{
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 23px;
@@ -26,25 +27,29 @@
 }
 
 .art-director-text {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0px;
 }
 
 .section-title-vertical {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: right;
+    position: absolute;
+    transform: rotate(-90deg);
+    background-color: red;
 }
 
 .section-title-horizontal {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
@@ -53,7 +58,7 @@
 }
 
 .names-of-designers {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -62,7 +67,7 @@
 }
 
 .from-skils-of-designers {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -71,7 +76,7 @@
 }
 
 .website-title {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -79,7 +84,7 @@
     text-align: left;
 }
 .website {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -94,6 +99,7 @@
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 15% 10px 10px 0px;
 }
 
 .text{
@@ -114,6 +120,21 @@
     text-align: left;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 1440px;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+}
+
 .main{
     width: 1065px;
     height: 630px;
@@ -124,12 +145,13 @@
 }
 
 .main-box{
-    /*width: 56%*/
+    width: 56%
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    110px, 20px, 110px, 20px;
 }
 
 .biography-container{
@@ -140,14 +162,21 @@
 }
 
 .biography-picture {
-    background: url("../images/jared-weiss.jpg");
-    flex:0 0 40%;
     height: 840px;
     width: 553px;
     margin: 2% 2%;
 }
 
 .biography-content {
-    flex:0 0 40%;
     margin: 2% 2%;
+    padding: 0 5% 5% 5%;
 }
+
+.jared-weiss{
+    width: 100%;
+}
+
+
+
+
+
