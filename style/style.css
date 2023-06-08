@@ -45,7 +45,46 @@
     text-align: right;
     position: absolute;
     transform: rotate(-90deg);
-    background-color: red;
+}
+
+.section-title-vertical-grid {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    transform: rotate(-90deg);
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-area: cell-4;
+}
+
+.names-of-designers-picture{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-area: cell-1;
+}
+
+.names-of-designers-picture2{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-area: cell-2;
+}
+
+.names-of-designers-picture3{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-area: cell-3;
 }
 
 .section-title-horizontal {
@@ -55,6 +94,8 @@
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
+    grid-row: 1/1;
+    grid-column: 1/2;
 }
 
 .names-of-designers {
@@ -64,6 +105,39 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-area: cell-5;
+}
+
+.names-of-designers2 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-area: cell-6;
+}
+
+.names-of-designers3 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-area: cell-7;
 }
 
 .from-skils-of-designers {
@@ -75,14 +149,53 @@
     text-align: left;
 }
 
-.website-title {
+.website-title1 {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    grid-row: 2/2;
+    grid-column: 1/1;
 }
+
+.website-title2 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 3/3;
+    grid-column: 1/1;
+}
+
+.website-title3 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 4/4;
+    grid-column: 1/1;
+}
+
+.testimonials-picture{
+    grid-row: 2/4;
+    grid-column: 2/2;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonials-picture2{
+    grid-row: 3/4;
+    grid-column: 4/4;
+    height: 100%;
+    width: 100%;
+}
+
 .website {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -92,6 +205,11 @@
     text-align: left;
 }
 
+.testimonials{
+    display: grid;
+    grid-template-columns: 20% 40% 10% 30%;
+    grid-template-rows: 10% 30% 30% 30%;
+}
 .quote{
     font-family: Bitter;
     font-size: 26px;
@@ -109,6 +227,8 @@
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
+    grid-row: 2/3;
+    grid-column: 4/4;
 }
 
 .list{
@@ -176,6 +296,16 @@ header{
     width: 100%;
 }
 
+.designers-section{
+    height: 619px;
+    width: 1337px;
+    display: grid;
+    grid-template-areas: "cell-1 cell-1 cell-4 cell-4"
+                       "cell-1 cell-1 cell-2 cell-3"
+                       "cell-0 cell-5 cell-6 cell-7";
+    grid-template-rows:  30% 60% 10% /* 3 строки */
+    grid-template-columns: 15% 35% 25% 25%; /* 3 столбца */
+}
 
 
 
