@@ -1,3 +1,7 @@
+section{
+    margin: 0% auto 5% auto;
+}
+
 .main-title{
     font-family: Playfair Display;
     font-size: 86px;
@@ -36,7 +40,7 @@
     margin: 0px;
 }
 
-.section-title-vertical {
+.section-title-vertical-b {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -44,10 +48,10 @@
     letter-spacing: 0em;
     text-align: right;
     position: absolute;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(400%);
 }
 
-.section-title-vertical-grid {
+.section-title-vertical-d {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -55,37 +59,9 @@
     letter-spacing: 0em;
     text-align: right;
     position: absolute;
-    transform: rotate(-90deg);
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-area: cell-4;
+    transform: rotate(-90deg) translateY(4100%) translateX(-40%);
 }
 
-.names-of-designers-picture{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-area: cell-1;
-}
-
-.names-of-designers-picture2{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-area: cell-2;
-}
-
-.names-of-designers-picture3{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-area: cell-3;
-}
 
 .section-title-horizontal {
     font-family: "Roboto", "Arial", sans-serif;
@@ -95,7 +71,31 @@
     letter-spacing: 0em;
     text-align: left;
     grid-row: 1/1;
-    grid-column: 1/2;
+    grid-column: 1/3;
+    grid-area: cell-1;
+}
+
+.testimonials-picture1{
+    grid-row: 2/4;
+    grid-column: 2/2;
+    grid-area: cell-5;
+}
+
+.text-conteiner{
+    grid-row: 2/4;
+    grid-column: 3/3;
+    grid-area: cell-6;
+}
+
+.designers-section{
+    height: 619px;
+    width: 1337px;
+    display: grid;
+    grid-template-areas: "cell-1 cell-1 cell-4 cell-4"
+                       "cell-1 cell-1 cell-2 cell-3"
+                       "cell-0 cell-5 cell-6 cell-7";
+    grid-template-rows:  30% 60% 10% /* 3 строки */
+    grid-template-columns: 15% 35% 25% 25%; /* 3 столбца */
 }
 
 .names-of-designers {
@@ -110,6 +110,7 @@
     grid-column-start: 1;
     grid-column-end: 1;
     grid-area: cell-5;
+    transform: translate(-30%, 0%);
 }
 
 .names-of-designers2 {
@@ -140,6 +141,30 @@
     grid-area: cell-7;
 }
 
+.names-of-designers-picture{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-area: cell-1;
+}
+
+.names-of-designers-picture2{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-area: cell-2;
+}
+
+.names-of-designers-picture3{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-area: cell-3;
+}
+
 .from-skils-of-designers {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -158,6 +183,8 @@
     text-align: left;
     grid-row: 2/2;
     grid-column: 1/1;
+    grid-area: cell-2;
+    transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website-title2 {
@@ -169,6 +196,9 @@
     text-align: left;
     grid-row: 3/3;
     grid-column: 1/1;
+    grid-area: cell-3;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website-title3 {
@@ -180,20 +210,9 @@
     text-align: left;
     grid-row: 4/4;
     grid-column: 1/1;
-}
-
-.testimonials-picture{
-    grid-row: 2/4;
-    grid-column: 2/2;
-    height: 100%;
-    width: 100%;
-}
-
-.testimonials-picture2{
-    grid-row: 3/4;
-    grid-column: 4/4;
-    height: 100%;
-    width: 100%;
+    grid-area: cell-4;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website {
@@ -205,10 +224,8 @@
     text-align: left;
 }
 
-.testimonials{
-    display: grid;
-    grid-template-columns: 20% 40% 10% 30%;
-    grid-template-rows: 10% 30% 30% 30%;
+.sinitta-leunen{
+    place-items: center;
 }
 .quote{
     font-family: Bitter;
@@ -227,8 +244,6 @@
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
-    grid-row: 2/3;
-    grid-column: 4/4;
 }
 
 .list{
@@ -296,17 +311,15 @@ header{
     width: 100%;
 }
 
-.designers-section{
-    height: 619px;
-    width: 1337px;
+.testimonials-section{
+    height: 813px;
+    width: 1400px;
     display: grid;
-    grid-template-areas: "cell-1 cell-1 cell-4 cell-4"
-                       "cell-1 cell-1 cell-2 cell-3"
-                       "cell-0 cell-5 cell-6 cell-7";
-    grid-template-rows:  30% 60% 10% /* 3 строки */
-    grid-template-columns: 15% 35% 25% 25%; /* 3 столбца */
+    grid-template-areas: "cell-1 cell-1 cell-1"
+                       "cell-2 cell-5 cell-6"
+                       "cell-3 cell-5 cell-6"
+                       "cell-4 cell-5 cell-6";
+    grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
+    grid-template-columns: 10% 45% 45% ; /* 3 столбца */
+    place-self: center;
 }
-
-
-
-
