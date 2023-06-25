@@ -1,3 +1,7 @@
+section{
+    margin: 0% auto 5% auto;
+}
+
 .main-title{
     font-family: Playfair Display;
     font-size: 86px;
@@ -36,7 +40,7 @@
     margin: 0px;
 }
 
-.section-title-vertical {
+.section-title-vertical-b {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -44,9 +48,22 @@
     letter-spacing: 0em;
     text-align: right;
     position: absolute;
-    transform: rotate(-90deg);
-    background-color: red;
+    transform: rotate(-90deg) translateX(400%);
 }
+
+.section-title-vertical-d {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    left: 65%;
+    top: 10px;
+    transform: rotate(-90deg) translate(-50%, 450%);
+}
+
 
 .section-title-horizontal {
     font-family: "Roboto", "Arial", sans-serif;
@@ -55,8 +72,49 @@
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
+    grid-row: 1/1;
+    grid-column: 1/3;
+    grid-area: cell-1;
+    transform: translate(10%, 40%);
 }
 
+.testimonials-picture1{
+    grid-row: 2/4;
+    grid-column: 2/2;
+    grid-area: cell-5;
+}
+
+.testimonials-picture2{
+    align-self: center;
+    margin-top: 10%;
+}
+
+.text-conteiner{
+    grid-row: 2/4;
+    grid-column: 3/3;
+    grid-area: cell-6;
+    display: flex;
+    flex-direction: column;
+}
+
+.designers-list{
+    list-style-type: none;
+    /*overflow-X: auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.designers-section{
+    /*overflow-X: auto;*/
+    height: 619px;
+    width: 1337px;
+    position: relative;
+}
+
+.names-of-designers-big{
+    transform: translate(50%, 0%);
+}
 .names-of-designers {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -75,14 +133,47 @@
     text-align: left;
 }
 
-.website-title {
+.website-title1 {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    grid-row: 2/2;
+    grid-column: 1/1;
+    grid-area: cell-2;
+    transform: rotate(-90deg) translate(0%, 50%);
 }
+
+.website-title2 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 3/3;
+    grid-column: 1/1;
+    grid-area: cell-3;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+.website-title3 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 4/4;
+    grid-column: 1/1;
+    grid-area: cell-4;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
 .website {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -92,6 +183,9 @@
     text-align: left;
 }
 
+.sinitta-leunen{
+    place-items: center;
+}
 .quote{
     font-family: Bitter;
     font-size: 26px;
@@ -99,7 +193,7 @@
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 15% 10px 10px 0px;
+    margin: 5% 0px 10px 0px;
 }
 
 .text{
@@ -108,6 +202,7 @@
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -176,7 +271,25 @@ header{
     width: 100%;
 }
 
+.testimonials-section{
+    height: 813px;
+    width: 1400px;
+    display: grid;
+    grid-template-areas: "cell-1 cell-1 cell-1"
+                       "cell-2 cell-5 cell-6"
+                       "cell-3 cell-5 cell-6"
+                       "cell-4 cell-5 cell-6";
+    grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
+    grid-template-columns: 15% 45% 25% ; /* 3 столбца */
+    place-self: center;
+}
 
-
-
+.biography-description {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 4px;
+  background-color: black;
+  margin: 20% 0px 0px 0px;
+}
 
