@@ -1,0 +1,182 @@
+.main-title{
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 103px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title-list, .art-director-title{
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px 0px 20px 0px;
+}
+
+.main-subtitle{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.art-director-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+.section-title-vertical {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    transform: rotate(-90deg);
+    background-color: red;
+}
+
+.section-title-horizontal {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.names-of-designers {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.from-skils-of-designers {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.website-title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.website {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.quote{
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 15% 10px 10px 0px;
+}
+
+.text{
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.list{
+    font-family: Bitter;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 1440px;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+}
+
+.main{
+    width: 1065px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/inside-weather.jpg");
+    background-size: cover;
+}
+
+.main-box{
+    width: 56%
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    110px, 20px, 110px, 20px;
+}
+
+.biography-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.biography-picture {
+    height: 840px;
+    width: 553px;
+    margin: 2% 2%;
+}
+
+.biography-content {
+    margin: 2% 2%;
+    padding: 0 5% 5% 5%;
+}
+
+.jared-weiss{
+    width: 100%;
+}
+
+
+
+
+
