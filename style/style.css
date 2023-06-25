@@ -59,7 +59,9 @@ section{
     letter-spacing: 0em;
     text-align: right;
     position: absolute;
-    transform: rotate(-90deg) translateY(4100%) translateX(-40%);
+    left: 65%;
+    top: 10px;
+    transform: rotate(-90deg) translate(-50%, 450%);
 }
 
 
@@ -87,17 +89,25 @@ section{
     grid-area: cell-6;
 }
 
-.designers-section{
-    height: 619px;
-    width: 1337px;
-    display: grid;
-    grid-template-areas: "cell-1 cell-1 cell-4 cell-4"
-                       "cell-1 cell-1 cell-2 cell-3"
-                       "cell-0 cell-5 cell-6 cell-7";
-    grid-template-rows:  30% 60% 10% /* 3 строки */
-    grid-template-columns: 15% 35% 25% 25%; /* 3 столбца */
+.designers-list{
+    list-style-type: none;
+    /*overflow-X: auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.designers-section{
+    /*overflow-X: auto;*/
+    height: 619px;
+    width: 1337px;
+    /*display: flex;*/
+    position: relative;
+}
+
+.names-of-designers-big{
+    transform: translate(50%, 0%);
+}
 .names-of-designers {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -105,64 +115,6 @@ section{
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-area: cell-5;
-    transform: translate(-30%, 0%);
-}
-
-.names-of-designers2 {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-area: cell-6;
-}
-
-.names-of-designers3 {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-area: cell-7;
-}
-
-.names-of-designers-picture{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-area: cell-1;
-}
-
-.names-of-designers-picture2{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-area: cell-2;
-}
-
-.names-of-designers-picture3{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-area: cell-3;
 }
 
 .from-skils-of-designers {
@@ -234,7 +186,7 @@ section{
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 15% 10px 10px 0px;
+    margin: 5% 0px 10px 0px;
 }
 
 .text{
@@ -323,3 +275,13 @@ header{
     grid-template-columns: 10% 45% 45% ; /* 3 столбца */
     place-self: center;
 }
+
+.biography-description {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 4px;
+  background-color: black;
+  margin: 20% 0px 0px 0px;
+}
+
