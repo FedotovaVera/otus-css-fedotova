@@ -1,3 +1,8 @@
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section{
     margin: 0% auto 5% auto;
 }
@@ -86,15 +91,15 @@ section{
 
 .testimonials-picture2{
     align-self: center;
-    margin-top: 10%;
 }
 
-.text-conteiner{
+.text-container{
     grid-row: 2/4;
     grid-column: 3/3;
     grid-area: cell-6;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .designers-list{
@@ -186,6 +191,13 @@ section{
 .sinitta-leunen{
     place-items: center;
 }
+
+.keghan-crossland{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .quote{
     font-family: Bitter;
     font-size: 26px;
@@ -196,13 +208,12 @@ section{
     margin: 5% 0px 10px 0px;
 }
 
-.text{
+.testimonials-text{
     font-family: Bitter;
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-    margin-top: 30px;
     text-align: center;
 }
 
@@ -220,11 +231,10 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 10px;
 
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 135px;
     left: 0px;
     top: 0px;
@@ -240,13 +250,14 @@ header{
 }
 
 .main-box{
-    width: 56%
-    background-color: white;
     position: absolute;
+    background-color: white;
+    width: 56%;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    110px, 20px, 110px, 20px;
+    z-index: 2;
 }
 
 .biography-container{
@@ -274,12 +285,16 @@ header{
 .testimonials-section{
     height: 813px;
     width: 1400px;
+}
+
+.testimonials-container{
     display: grid;
     grid-template-areas: "cell-1 cell-1 cell-1"
                        "cell-2 cell-5 cell-6"
                        "cell-3 cell-5 cell-6"
                        "cell-4 cell-5 cell-6";
     grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
     grid-template-columns: 15% 45% 25% ; /* 3 столбца */
     place-self: center;
 }
