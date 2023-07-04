@@ -104,7 +104,7 @@ section{
 
 .designers-list{
     list-style-type: none;
-    /*overflow-X: auto;*/
+    overflow-X: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -283,8 +283,8 @@ header{
 }
 
 .testimonials-section{
-    height: 813px;
-    width: 1400px;
+    /*height: 813px;
+    width: 1400px;*/
 }
 
 .testimonials-container{
