@@ -1,5 +1,18 @@
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
 section{
-    margin: 0% auto 5% auto;
+    margin: 0px auto 5% auto;
+}
+
+figure{
+    margin: 10px;
 }
 
 .main-title{
@@ -61,7 +74,7 @@ section{
     position: absolute;
     left: 65%;
     top: 10px;
-    transform: rotate(-90deg) translate(-50%, 450%);
+    transform: rotate(-90deg) translate(-30px, 0px);
 }
 
 
@@ -75,6 +88,7 @@ section{
     grid-row: 1/1;
     grid-column: 1/3;
     grid-area: cell-1;
+    transform: translate(10%, 40%);
 }
 
 .testimonials-picture1{
@@ -83,24 +97,31 @@ section{
     grid-area: cell-5;
 }
 
-.text-conteiner{
+.testimonials-picture2{
+    align-self: center;
+}
+
+.text-container{
     grid-row: 2/4;
     grid-column: 3/3;
     grid-area: cell-6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .designers-list{
     list-style-type: none;
-    /*overflow-X: auto;*/
+    overflow-X: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 .designers-section{
-    /*overflow-X: auto;*/
-    height: 619px;
-    width: 1337px;
+    overflow: auto;
+    /*height: 619px;
+    width: 1337px;*/
     position: relative;
 }
 
@@ -178,6 +199,13 @@ section{
 .sinitta-leunen{
     place-items: center;
 }
+
+.keghan-crossland{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .quote{
     font-family: Bitter;
     font-size: 26px;
@@ -188,7 +216,7 @@ section{
     margin: 5% 0px 10px 0px;
 }
 
-.text{
+.testimonials-text{
     font-family: Bitter;
     font-size: 32px;
     font-weight: 400;
@@ -211,11 +239,10 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 10px;
 
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 135px;
     left: 0px;
     top: 0px;
@@ -231,13 +258,14 @@ header{
 }
 
 .main-box{
-    width: 56%
-    background-color: white;
     position: absolute;
+    background-color: white;
+    width: 56%;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    110px, 20px, 110px, 20px;
+    z-index: 2;
 }
 
 .biography-container{
@@ -263,15 +291,19 @@ header{
 }
 
 .testimonials-section{
-    height: 813px;
-    width: 1400px;
+    /*height: 813px;
+    width: 1400px;*/
+}
+
+.testimonials-container{
     display: grid;
     grid-template-areas: "cell-1 cell-1 cell-1"
                        "cell-2 cell-5 cell-6"
                        "cell-3 cell-5 cell-6"
                        "cell-4 cell-5 cell-6";
     grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
-    grid-template-columns: 10% 45% 45% ; /* 3 столбца */
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    grid-template-columns: 10% 45% 30% ; /* 3 столбца */
     place-self: center;
 }
 
@@ -284,3 +316,70 @@ header{
   margin: 20% 0px 0px 0px;
 }
 
+/* strong-section */
+
+.strong-section{
+    /*width: 1686px;
+    height: 665px;*/
+    margin-top: 30%;
+    overflow: auto;
+}
+
+.strong-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    column-gap: 30px;
+    height: 664px;
+}
+
+.section-title-vertical-t{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    left: 27%;
+    top: 10px;
+    transform: rotate(-90deg) translate(-30%, -1000%);
+}
+
+.avery-klein{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.strong-section-list{
+    display: inline-flex;
+    height: 664px;
+    padding: 0px 9px 18px 9px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.img-strong{
+    display: block;
+}
+
+@supports (display: grid) {
+    .strong-container {
+        display: grid;
+        grid-template-rows: 665px;
+        grid-template-columns: 350px 350px 395px 350px;
+        grid-auto-flow: column;
+        align-items: end;
+        gap: 2%;
+    }
+
+    .section-title-vertical-t{
+        grid-row: 1;
+        grid-column: 2;
+        justify-items: start;
+    }
+}
