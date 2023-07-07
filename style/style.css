@@ -321,8 +321,12 @@ header{
 .strong-section{
     /*width: 1686px;
     height: 665px;*/
-    margin-top: 30%;
+    margin-top: 15%;
     overflow: auto;
+    position: relative;
+}
+
+.row{
     position: relative;
 }
 
@@ -346,7 +350,7 @@ header{
     position: absolute;
     left: -50px;
     top: 10px;
-    transform: rotate(-90deg) translate(-25%, 0%);
+    transform: rotate(-90deg) translate(-25%, 2000%);
 }
 
 .avery-klein{
