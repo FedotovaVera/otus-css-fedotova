@@ -78,18 +78,7 @@ figure{
 }
 
 
-.section-title-horizontal {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row: 1/1;
-    grid-column: 1/3;
-    grid-area: cell-1;
-    transform: translate(10%, 40%);
-}
+
 
 .testimonials-picture1{
     grid-row: 2/4;
@@ -146,55 +135,7 @@ figure{
     text-align: left;
 }
 
-.website-title1 {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row: 2/2;
-    grid-column: 1/1;
-    grid-area: cell-2;
-    transform: rotate(-90deg) translate(0%, 50%);
-}
 
-.website-title2 {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row: 3/3;
-    grid-column: 1/1;
-    grid-area: cell-3;
-    transform: rotate(-90deg);
-    transform: rotate(-90deg) translate(0%, 50%);
-}
-
-.website-title3 {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-row: 4/4;
-    grid-column: 1/1;
-    grid-area: cell-4;
-    transform: rotate(-90deg);
-    transform: rotate(-90deg) translate(0%, 50%);
-}
-
-.website {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
 
 .sinitta-leunen{
     place-items: center;
@@ -290,11 +231,16 @@ header{
     width: 100%;
 }
 
-.testimonials-section{
-    /*height: 813px;
-    width: 1400px;*/
+.biography-description {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 4px;
+  background-color: black;
+  margin: 20% 0px 0px 0px;
 }
 
+/* testimonials-section БЭМ */
 .testimonials-container{
     display: grid;
     grid-template-areas: "cell-1 cell-1 cell-1"
@@ -307,13 +253,49 @@ header{
     place-self: center;
 }
 
-.biography-description {
-  display: block;
-  content: "";
-  width: 14px;
-  height: 4px;
-  background-color: black;
-  margin: 20% 0px 0px 0px;
+.testimonials__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 1/1;
+    grid-column: 1/3;
+    grid-area: cell-1;
+    transform: translate(10%, 40%);
+}
+
+.testimonials__website {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.website_title1 {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    grid-area: cell-2;
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+.website_title2 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    grid-area: cell-3;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+.website_title3 {
+    grid-row: 4/4;
+    grid-column: 1/1;
+    grid-area: cell-4;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
 }
 
 /* strong-section */
