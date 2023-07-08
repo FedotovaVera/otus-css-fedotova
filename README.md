@@ -6,3 +6,4 @@ I am a student of the HTML/CSS course at OTUS :sunglasses:
 My homework will be stored here :muscle:
 
 Bootstrap-версия: https://github.com/FedotovaVera/otus-css-fedotova/tree/bootstrap
+Tailwind-версия: https://github.com/FedotovaVera/otus-css-fedotova/tree/tailwind
