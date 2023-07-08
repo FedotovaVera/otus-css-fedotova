@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/fonts.css">
     <link rel="stylesheet" href="/style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body>
@@ -33,28 +34,27 @@
                 </div>
             </section>
 
-            <section class="biography-section">
-                <div class="biography-container">
-                    <div class="biography-picture">
-                         <img src="/images/jared-weiss.jpg" class="jared-weiss"  alt="jared-weiss">
+            <section class="relative">
+                <div class="flex flex-nowrap items-center justify-center">
+                    <div class="m-6 pr-6 biography-picture">
+                         <img src="/images/jared-weiss.jpg" class="blur-sm ease-in duration-300 hover:blur-none"  alt="jared-weiss">
                     </div>
-                    <h2 class="section-title-vertical-b">
+                    <h2 class="font-sans text-xl font-bold leading-6 tracking-normal text-right absolute -translate-y-96 -rotate-90">
                             Biography
                     </h2>
-                    <div class="biography-content">
-                        <div  class="art-director-title">
+                    <div class="m-8 pl-16 pb-6 pr-6">
+                        <div  class="font-serif text-8xl font-medium leading-snug tracking-normal text-left mt-2.5 mb-5">
                             Katya <br>
                             Mills
                         </div>
 
-                        <div class="art-director-text">
+                        <div class="font-sans text-lg font-medium leading-6 tracking-normal text-left m-0">
                             Art Director
-                        </div>
-                        <div class="art-director-text">
+                            <br>
                             Scenography / Styling / Creative Photography / Design
                         </div>
-                        <div class="biography-description"></div>
-                        <blockquote class="quote">
+                        <div class="block content-none w-3.5 h-1 bg-black mt-14"></div>
+                        <blockquote class="font-serif text-2xl font-normal tracking-normal text-left mt-6 mb-6">
                              “The more I deal with the work <br>
                              as something that is my own,  <br>
                              as something that is personal, <br>
