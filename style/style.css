@@ -1,0 +1,414 @@
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section{
+    margin: 0px auto 5% auto;
+}
+
+figure{
+    margin: 10px;
+}
+
+.main-title{
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 103px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title-list, .art-director-title{
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px 0px 20px 0px;
+}
+
+.main-subtitle{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.art-director-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+.section-title-vertical-b {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    transform: rotate(-90deg) translateX(400%);
+}
+
+.section-title-vertical-d {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    left: 65%;
+    top: 10px;
+    transform: rotate(-90deg) translate(-30px, 0px);
+}
+
+
+
+
+.testimonials-picture1{
+    grid-row: 2/4;
+    grid-column: 2/2;
+    grid-area: cell-5;
+}
+
+.testimonials-picture2{
+    align-self: center;
+}
+
+.text-container{
+    grid-row: 2/4;
+    grid-column: 3/3;
+    grid-area: cell-6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.designers-list{
+    list-style-type: none;
+    overflow-X: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.designers-section{
+    overflow: auto;
+    /*height: 619px;
+    width: 1337px;*/
+    position: relative;
+}
+
+.names-of-designers-big{
+    transform: translate(50%, 0%);
+}
+.names-of-designers {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.from-skils-of-designers {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.sinitta-leunen{
+    place-items: center;
+}
+
+.keghan-crossland{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quote{
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 5% 0px 10px 0px;
+}
+
+.testimonials-text{
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.list{
+    font-family: Bitter;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+}
+
+.main{
+    width: 1065px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/inside-weather.jpg");
+    background-size: cover;
+}
+
+.main-box{
+    position: absolute;
+    background-color: white;
+    width: 56%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.biography-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.biography-picture {
+    height: 840px;
+    width: 553px;
+    margin: 2% 2%;
+}
+
+.biography-content {
+    margin: 2% 2%;
+    padding: 0 5% 5% 5%;
+}
+
+.jared-weiss{
+    width: 100%;
+}
+
+.biography-description {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 4px;
+  background-color: black;
+  margin: 20% 0px 0px 0px;
+}
+
+/* testimonials-section БЭМ */
+.testimonials-container{
+    display: grid;
+    grid-template-areas: "cell-1 cell-1 cell-1"
+                       "cell-2 cell-5 cell-6"
+                       "cell-3 cell-5 cell-6"
+                       "cell-4 cell-5 cell-6";
+    grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    grid-template-columns: 10% 45% 30% ; /* 3 столбца */
+    place-self: center;
+}
+
+.testimonials__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-row: 1/1;
+    grid-column: 1/3;
+    grid-area: cell-1;
+    transform: translate(10%, 40%);
+}
+
+.testimonials__website {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.website_title1 {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    grid-area: cell-2;
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+.website_title2 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    grid-area: cell-3;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+.website_title3 {
+    grid-row: 4/4;
+    grid-column: 1/1;
+    grid-area: cell-4;
+    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(0%, 50%);
+}
+
+/* strong-section */
+
+.strong-section{
+    /*width: 1686px;
+    height: 665px;*/
+    margin-top: 30%;
+    overflow: auto;
+    position: relative;
+}
+
+.strong-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    column-gap: 30px;
+    height: 664px;
+}
+
+.section-title-vertical-t{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    transform: rotate(-90deg) translate(-25%, 0%);
+}
+
+.avery-klein{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.strong-section-list{
+    display: inline-flex;
+    height: 664px;
+    padding: 0px 9px 18px 9px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.img-strong{
+    display: block;
+}
+
+@supports (display: grid) {
+    .strong-container {
+        display: grid;
+        grid-template-rows: 665px;
+        grid-template-columns: 350px 350px 395px 350px;
+        grid-auto-flow: column;
+        align-items: end;
+        gap: 2%;
+    }
+
+    .section-title-vertical-t{
+        grid-row: 1;
+        grid-column: 2;
+        justify-items: start;
+    }
+}
+
+/*ссылка*/
+a {
+  background-image: linear-gradient(
+    to right,
+    #00008b,
+    #6600ff 50%,
+    #000 70%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before{
+  content: '';
+  background: #00008b;
+  display: block;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
+}
+
+/* анимация картинки */
+.jared-weiss {
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+.jared-weiss:hover {
+    filter: blur(0); /* Отменяем размытие */
+}
