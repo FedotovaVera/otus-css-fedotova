@@ -11,65 +11,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/fonts.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/media.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="/images/menu.svg" alt="Меню">
+            <div>
+                <img src="/images/menu.svg"  class="links" alt="Меню">
+            </div>
+            <div class="links-mob">
+              <div class="links-mob-element"><a href="#Biography" class="links-section">B</a></div>
+              <div class="links-mob-element"><a href="#Designers" class="links-section">D</a></div>
+              <div class="links-mob-element"><a href="#Testimonials" class="links-section">T</a></div>
+              <div class="links-mob-element"><a href="#Strong" class="links-section">S</a></div>
+            </div>
         </nav>
     </header>
-
     <main>
-            <section class="main wrapper">
+            <section class="main">
                 <div class="main-box">
                     <h1 class="main-title">
-                        Mod Studio
+                        Mod&nbsp;Studio
                     </h1>
 
                     <p class="main-subtitle">
-                        Modern Web Studio
+                        Modern&nbsp;Web&nbsp;Studio
                     </p>
                 </div>
             </section>
 
-            <section class="biography-section">
+            <section class="biography-section" id="Biography">
                 <div class="biography-container">
                     <div class="biography-picture">
                          <img src="/images/jared-weiss.jpg" class="jared-weiss"  alt="jared-weiss">
                     </div>
-                    <h2 class="section-title-vertical-b">
-                            Biography
-                    </h2>
                     <div class="biography-content">
+                        <h2 class="section-title-vertical-b">
+                            Biography
+                        </h2>
                         <div  class="art-director-title">
-                            Katya <br>
+                            <span class="mob-a-r-text"> - </span>
+                            Katya <br class="no-mob-a-r-text">
                             Mills
                         </div>
 
                         <div class="art-director-text">
-                            Art Director
-                        </div>
-                        <div class="art-director-text">
-                            Scenography / Styling / Creative Photography / Design
+                            Art Director <br>
+                            <span class="mob-a-r-text"> - </span> Scenography <span class="no-mob-a-r-text">/</span> <br class="mob-a-r-text">
+                            <span class="mob-a-r-text"> - </span> Styling <span class="no-mob-a-r-text">/</span> <br class="mob-a-r-text">
+                            <span class="mob-a-r-text"> - </span> Creative Photography <span class="no-mob-a-r-text">/</span> <br class="mob-a-r-text">
+                            <span class="mob-a-r-text"> - </span> Design
                         </div>
                         <div class="biography-description"></div>
                         <blockquote class="quote">
                              “The more I deal with the work <br>
-                             as something that is my own,  <br>
+                             as something that is <br class="mob-a-r-text"> my own,  <br>
                              as something that is personal, <br>
                              the more successful it is.”
                         </blockquote>
+                        <div class="biography-picture-mob">
+                            <img src="/images/jared-weiss-mob.png" class="jared-weiss"  alt="jared-weiss-mob">
+                        </div>
                     </div>
                 </div>
             </section>
 
-        <section class="designers-section">
+        <section class="designers-section" id="Designers">
+            <h2 class="section-title-vertical-d">
+                        Designers
+            </h2>
             <ul class="designers-list">
                   <li class="designers-item designers-item-big">
-                        <figure class="names-of-designers-picture">
-                        <img src="/images/spurwing-agency.jpg" alt="spurwing-agency">
-                        <figcaption class="names-of-designers names-of-designers-big">
+                        <figure class="names-of-designers-picture designers-picture-order-1">
+                         <picture>
+                             <source srcset="/images/spurwing-agency-mob.png" media="(max-width: 768px)">
+                             <img src="/images/spurwing-agency.jpg" alt="spurwing-agency">
+                         </picture>
+                        <figcaption class="names-of-designers">
                             JESS WONDER
                             <div class="from-skils-of-designers">
                                 <b> From </b>/ Be more flower <br>
@@ -80,7 +99,7 @@
                   </li>
 
                   <li class="designers-item">
-                    <figure class="names-of-designers-picture">
+                    <figure class="names-of-designers-picture  designers-picture-order-2">
                         <img src="/images/stil.jpg" alt="stil">
                         <figcaption class="names-of-designers">
                             KAMERON CLEIN
@@ -92,14 +111,12 @@
                     </figure>
                  </li>
 
-                <li class="designers-item">
-                    <h2 class="section-title-vertical-d">
-                        Designers
-                    </h2>
+                <li class="designers-item designers-picture-order-4">
+
                 </li>
 
                 <li class="designers-item">
-                    <figure class="names-of-designers-picture">
+                    <figure class="names-of-designers-picture  designers-picture-order-3">
                     <img src="/images/stil2.jpg" alt="stil2">
                     <figcaption class="names-of-designers">
                         LOUISSE RED
@@ -112,7 +129,7 @@
             </ul>
         </section>
 
-            <section class="testimonials-section">
+            <section class="testimonials-section" id="Testimonials">
                 <div class="testimonials-container">
                     <h2 class="section-title-horizontal">
                         <b>Testimonials</b>
@@ -144,23 +161,24 @@
                     </div>
                     <div class="text-container">
                         <div class="testimonials-text">
-                            I just really <br>
+                            I just really <br  class="no-mob-a-r-text">
                             want to do <br>
-                            good work <br>
-                            and work with <br>
-                            some great <br>
-                            people, people <br>
+                            good work <br  class="no-mob-a-r-text">
+                            and work <br  class="mob-a-r-text"> with <br  class="no-mob-a-r-text">
+                            some great <br  class="no-mob-a-r-text">
+                            people, <br  class="mob-a-r-text"> people <br class="no-mob-a-r-text">
                             who challenge <br>
                             me.
                         </div>
-                        <div class="testimonials-picture2">
-                            <img src="/images/sinitta-leunen.jpg" class="sinitta-leunen" alt="keghan-crossland">
-                        </div>
+                        <picture  class="testimonials-picture2">
+                             <source srcset="/images/sinitta-leunen-mob.png" media="(max-width: 768px)">
+                             <img src="/images/sinitta-leunen.jpg" alt="sinitta-leunen">
+                         </picture>
                     </div>
                 </div>
             </section>
 
-    <section class="strong-section">
+    <section class="strong-section" id="Strong">
         <div class="strong-container">
             <div class="img-strong">
                 <img src="/images/dawid-liberadzki.jpg" alt="dawid-liberadzki">
@@ -168,7 +186,7 @@
             <h2 class="section-title-vertical-t">
                 Strong points
             </h2>
-            <div class="img-strong">
+            <div class="img-strong  img-strong-mob">
                 <img src="/images/avery-klein.jpg" alt="avery-klein">
             </div>
             <div class="strong-section-list">
@@ -188,7 +206,8 @@
                 <li class="list">Creativity</li>
              </ul>
             </div>
-            <div class="img-strong">
+
+            <div class="img-strong img-strong-mob">
                 <img src="/images/avery-klein.jpg" alt="avery-klein">
             </div>
         </div>

@@ -1,0 +1,251 @@
+@media (max-width: 768px) {
+    section{
+        margin-top: 80px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .main{
+        margin: 0px auto;
+        background-image: url("../images/keghan-crossland.jpg");
+    }
+
+    .main-title{
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .links-mob {
+        display: flex;
+        color: black;
+        font-family: Butler;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        z-index: 100000;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .links-mob-element{
+        width: 99px;
+        height: 82px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .links-section{
+        text-decoration: none;
+        color: black;
+    }
+
+    .links-section:focus {
+        text-decoration: underline;
+        color: black;
+        border: none;
+    }
+
+    .strong-section{
+        bottom: 100px;
+    }
+
+    .main-box{
+        position: static;
+        width: 100%;
+        height: 344px;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .mob-a-r-text{
+        display: initial;
+    }
+
+    .no-mob-a-r-text{
+        display: none;
+    }
+
+    .biography-picture{
+        display: none;
+    }
+
+    .biography-description{
+        display: none;
+    }
+
+    .biography-container{
+
+    }
+
+    .biography-picture-mob{
+        display: flex;
+        width 100%;
+        grid-column: 1 / span 2;
+        grid-row: 4 ;
+        max-width: 450px;
+        margin-top: 7%;
+    }
+
+    .section-title-vertical-b {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        transform: rotate(0deg) translate(130%, -70%);
+        grid-column: 2 ;
+        grid-row: 1 ;
+
+    }
+
+    .biography-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 107px 226px 100px 400px;
+        margin-top: 80px;
+    }
+
+    .quote{
+        grid-column: 1 / span 2;
+        grid-row: 2 ;
+        margin-top: 10%;
+    }
+
+    .art-director-title{
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        grid-column: 1 / span 2;
+        grid-row: 3 ;
+    }
+
+    .art-director-text{
+        grid-column: 1 ;
+        grid-row: 1 ;
+    }
+
+    .names-of-designers-big{
+        transform: translate(0%, 0%);
+    }
+
+    .designers-list{
+        justify-content: left;
+    }
+
+    .designers-picture-order-1{
+        order: 2;
+    }
+
+    .designers-picture-order-2{
+        order: 4;
+    }
+
+    .designers-picture-order-3{
+        order: 3;
+    }
+
+    .designers-picture-order-4{
+        order: 1;
+    }
+
+
+.section-title-vertical-d {
+    position: absolute;
+    left: 50px;
+    transform: rotate(0deg) translate(0px, -50px);
+    z-index: 50;
+    }
+
+    .testimonials-picture1{
+        display: none;
+    }
+
+    .testimonials-container{
+        display: grid;
+        grid-template-rows:  7% 80% 7% 7%; /* 4 строки */
+        grid-template-columns: 50% 50% ; /* 2 столбца */
+        place-self: center;
+    }
+
+    .section-title-horizontal {
+        font-size: 18px;
+        text-align: right;
+        grid-row: 1;
+        grid-column: 1/span 2;
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .text-container{
+        grid-row: 2;
+        grid-column: 1/span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .website-title1 {
+        grid-row: 3;
+        grid-column: 1/1;
+        transform: rotate(0deg);
+        padding-left: 15px;
+    }
+
+    .website-title2 {
+        grid-row: 3;
+        grid-column: 2/2;;
+        transform: rotate(0deg);
+        padding-left: 15px;
+    }
+
+    .website-title3 {
+        grid-row: 4;
+        grid-column: 1/1;
+        transform: rotate(0deg);
+        padding-left: 15px;
+    }
+
+    .testimonials-text{
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .img-strong-mob{
+        display: none;
+    }
+
+    .title-list{
+        font-size: 64px;
+        font-weight: 400;
+    }
+
+    .list{
+        font-size: 24px;
+    }
+
+    .section-title-vertical-t{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: right;
+        transform: rotate(0deg);
+    }
+
+    .strong-section-list{
+        order: 1;
+    }
+
+    .img-strong{
+        order: 2;
+    }
+}
+
