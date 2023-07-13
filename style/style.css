@@ -95,6 +95,7 @@ figure{
     grid-row: 2/4;
     grid-column: 2/2;
     grid-area: cell-5;
+    place-self: center;
 }
 
 .testimonials-picture2{
@@ -253,7 +254,7 @@ header{
     height: 630px;
     margin: 100px auto;
     position: relative;
-    background-image: url("../images/spurwing-agency.jpg");
+    background-image: url("../images/inside-weather.jpg");
     background-size: cover;
 }
 
@@ -304,8 +305,8 @@ header{
                        "cell-4 cell-5 cell-6";
     grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
     /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-    grid-template-columns: 10% 45% 30% ; /* 3 столбца */
-    place-self: center;
+    grid-template-columns: 10% 30% 30% ; /* 3 столбца */
+    justify-content: center;
 }
 
 .biography-description {

@@ -9,7 +9,7 @@
 
     .main{
         margin: 0px auto;
-        background-image: url("../images/keghan-crossland.jpg");
+        background-image: url("../images/inside-weather-mob.jpg");
     }
 
     .main-title{
@@ -227,17 +227,11 @@
     .title-list{
         font-size: 64px;
         font-weight: 400;
+        margin: 10px 0px 0px 0px;
     }
 
     .list{
         font-size: 24px;
-    }
-
-    .section-title-vertical-t{
-        font-size: 18px;
-        font-weight: 700;
-        text-align: right;
-        transform: rotate(0deg);
     }
 
     .strong-section-list{
@@ -247,5 +241,25 @@
     .img-strong{
         order: 2;
     }
-}
 
+    .strong-section{
+        padding-top: 30%;
+    }
+
+    .section-title-vertical-t{
+        font-size: 18px;
+        font-weight: 700;
+        transform: rotate(0deg)  translate(50%, -30px);
+        grid-column: 2;
+        text-align: right;
+    }
+
+    .strong-section-list {
+        gap: 0px;
+    }
+
+    .Strengths-list{
+        place-self: start;
+    }
+
+}
