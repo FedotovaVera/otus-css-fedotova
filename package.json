@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "webpack": "^5.88.1"
+  },
+  "name": "otus-css-fedotova",
+  "description": "Домашние работы по обучению в OTUS\r ## Hi there :v:\r :woman: My name is Vera.\r I am a student of the HTML/CSS course at OTUS :sunglasses:\r My homework will be stored here :muscle:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "otus-css-fedotova"
+  },
+  "author": "Vera Fedotova",
+  "license": "ISC"
+}
+
