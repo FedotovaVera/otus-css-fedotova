@@ -256,6 +256,7 @@ header{
     position: relative;
     background-image: url("../images/inside-weather.jpg");
     background-size: cover;
+    background-position: bottom;
 }
 
 .main-box{

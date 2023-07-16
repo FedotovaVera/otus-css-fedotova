@@ -1,6 +1,20 @@
+@media (max-width: 575px) {
+    .main{
+        margin: 0px;
+        background-image: url("../images/inside-weather-mob.jpg");
+    }
+}
+
 @media (max-width: 768px) {
+
+    .main{
+        background-image: url("../images/inside-weather-mob.jpg");
+    }
+
     section{
         margin-top: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .links{
@@ -8,8 +22,7 @@
     }
 
     .main{
-        margin: 0px auto;
-        background-image: url("../images/inside-weather-mob.jpg");
+        margin: 0px;
     }
 
     .main-title{
@@ -17,6 +30,8 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        line-height: 20%;
+        margin-top: 25%;
     }
 
     .links-mob {
@@ -55,12 +70,10 @@
         border: none;
     }
 
-    .strong-section{
-        bottom: 100px;
-    }
+
 
     .main-box{
-        position: static;
+        position: absolute;
         width: 100%;
         height: 344px;
         top: 0%;
@@ -70,6 +83,7 @@
 
     .mob-a-r-text{
         display: initial;
+
     }
 
     .no-mob-a-r-text{
@@ -80,21 +94,20 @@
         display: none;
     }
 
-    .biography-description{
-        display: none;
-    }
-
     .biography-container{
 
+    }
+
+    .biography-description{
+        display: none;
     }
 
     .biography-picture-mob{
         display: flex;
         width 100%;
-        grid-column: 1 / span 2;
-        grid-row: 4 ;
-        max-width: 450px;
-        margin-top: 7%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .section-title-vertical-b {
@@ -110,8 +123,9 @@
     .biography-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 107px 226px 100px 400px;
-        margin-top: 80px;
+        grid-template-rows: 107px 226px 100px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .quote{
@@ -158,11 +172,15 @@
         order: 1;
     }
 
+.designers-section{
+    padding-top: 80px;
+    margin-top: 0px;
+}
 
 .section-title-vertical-d {
     position: absolute;
-    left: 50px;
-    transform: rotate(0deg) translate(0px, -50px);
+    left: 25px;
+    transform: rotate(0deg) translate(0px, 0px);
     z-index: 50;
     }
 
@@ -172,9 +190,10 @@
 
     .testimonials-container{
         display: grid;
-        grid-template-rows:  7% 80% 7% 7%; /* 4 строки */
+        grid-template-rows:  5% 85% 5% 5%; /* 4 строки */
         grid-template-columns: 50% 50% ; /* 2 столбца */
         place-self: center;
+        grid-row-gap: 28px;
     }
 
     .section-title-horizontal {
@@ -182,8 +201,17 @@
         text-align: right;
         grid-row: 1;
         grid-column: 1/span 2;
-        padding-right: 50px;
-        margin-bottom: 50px;
+        transform: translate(0%, 0%);
+    }
+
+    .sinitta-leunen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .testimonials-picture2{
+        align-self: stretch;
     }
 
     .text-container{
@@ -191,7 +219,6 @@
         grid-column: 1/span 2;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     .website-title1 {
@@ -218,6 +245,7 @@
     .testimonials-text{
         font-size: 30px;
         font-weight: 300;
+        align-self: stretch;
     }
 
     .img-strong-mob{
@@ -227,39 +255,81 @@
     .title-list{
         font-size: 64px;
         font-weight: 400;
-        margin: 10px 0px 0px 0px;
+        margin: 0px;
     }
 
     .list{
         font-size: 24px;
     }
 
-    .strong-section-list{
-        order: 1;
+    ul{
+        padding-left: 15px;
+        margin: 0px;
     }
 
     .img-strong{
         order: 2;
+        width: 300px;
+        height: 450px;
+
     }
 
     .strong-section{
-        padding-top: 30%;
+        margin-top: 250px;
+        margin-left: 0px;
+        bottom: 100px;
+    }
+
+    .strong-section-list {
+        gap: 0px;
+        place-self: start;
+    }
+
+    .Strengths-list{
+        place-self: start;
+    }
+
+    .strong-container {
+        display: grid;
+        grid-template-rows: 10% 15% 75%;
+        grid-template-columns: 250px 350px;
+        grid-auto-flow: column;
+        align-items: end;
+        gap: 2%;
     }
 
     .section-title-vertical-t{
         font-size: 18px;
         font-weight: 700;
-        transform: rotate(0deg)  translate(50%, -30px);
+        grid-row: 1;
         grid-column: 2;
+        position: static ;
         text-align: right;
+        left: 0px;
+        transform: rotate(0deg) translate(-40%, 0%);
     }
 
-    .strong-section-list {
-        gap: 0px;
+    .strong-section-list{
+        grid-row: 2;
+        grid-column: 1;
+        align-self: start;
     }
 
-    .Strengths-list{
-        place-self: start;
+    .strengths-list{
+        grid-row: 3;
+        grid-column: 1;
+        align-self: start;
+    }
+
+    .img-strong{
+        grid-row: 3;
+        grid-column: 2;
+        align-self: start;
+    }
+
+    h3 {
+        margin: 0px;
+        margin-block-end: 0px;
     }
 
 }
