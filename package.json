@@ -7,6 +7,7 @@
     "html-webpack-plugin": "^5.5.3",
     "http-server": "^14.1.1",
     "lodash-webpack-plugin": "^0.11.6",
+    "squoosh-webpack-plugin": "^2.1.1",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.1",

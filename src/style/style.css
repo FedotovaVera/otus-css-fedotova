@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 nav {
     margin-left: auto;
     margin-right: auto;
@@ -61,7 +68,9 @@ figure{
     letter-spacing: 0em;
     text-align: right;
     position: absolute;
-    transform: rotate(-90deg) translate(100%, -600%);
+    -webkit-transform: rotate(-90deg) translate(100%, -600%);
+        -ms-transform: rotate(-90deg) translate(100%, -600%);
+            transform: rotate(-90deg) translate(100%, -600%);
 }
 
 .section-title-vertical-d {
@@ -74,49 +83,81 @@ figure{
     position: absolute;
     left: 62%;
     top: 30px;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 
 .section-title-horizontal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
+    -ms-grid-row: 1;
     grid-row: 1/1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
     grid-area: cell-1;
-    transform: translate(10%, 40%);
+    -webkit-transform: translate(10%, 40%);
+        -ms-transform: translate(10%, 40%);
+            transform: translate(10%, 40%);
 }
 
 .testimonials-picture1{
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
     grid-row: 2/4;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     grid-area: cell-5;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
 }
 
 .testimonials-picture2{
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .text-container{
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
     grid-row: 2/4;
+    -ms-grid-column: 3;
     grid-column: 3/3;
     grid-area: cell-6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .designers-list{
     list-style-type: none;
     overflow-X: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .designers-section{
@@ -124,10 +165,6 @@ figure{
     /*height: 619px;
     width: 1337px;*/
     position: relative;
-}
-
-.names-of-designers-big{
-    transform: translate(50%, 0%);
 }
 .names-of-designers {
     font-family: "Roboto", "Arial", sans-serif;
@@ -154,10 +191,14 @@ figure{
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    -ms-grid-row: 2;
     grid-row: 2/2;
+    -ms-grid-column: 1;
     grid-column: 1/1;
     grid-area: cell-2;
-    transform: rotate(-90deg) translate(0%, 50%);
+    -webkit-transform: rotate(-90deg) translate(0%, 50%);
+        -ms-transform: rotate(-90deg) translate(0%, 50%);
+            transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website-title2 {
@@ -167,11 +208,17 @@ figure{
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    -ms-grid-row: 3;
     grid-row: 3/3;
+    -ms-grid-column: 1;
     grid-column: 1/1;
     grid-area: cell-3;
-    transform: rotate(-90deg);
-    transform: rotate(-90deg) translate(0%, 50%);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg) translate(0%, 50%);
+        -ms-transform: rotate(-90deg) translate(0%, 50%);
+            transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website-title3 {
@@ -181,11 +228,17 @@ figure{
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    -ms-grid-row: 4;
     grid-row: 4/4;
+    -ms-grid-column: 1;
     grid-column: 1/1;
     grid-area: cell-4;
-    transform: rotate(-90deg);
-    transform: rotate(-90deg) translate(0%, 50%);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg) translate(0%, 50%);
+        -ms-transform: rotate(-90deg) translate(0%, 50%);
+            transform: rotate(-90deg) translate(0%, 50%);
 }
 
 .website {
@@ -204,7 +257,8 @@ figure{
 .keghan-crossland{
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .quote{
@@ -236,10 +290,19 @@ figure{
 }
 
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
 
     position: absolute;
@@ -266,15 +329,24 @@ header{
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 .biography-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .biography-picture {
@@ -299,15 +371,20 @@ header{
 }
 
 .testimonials-container{
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "cell-1 cell-1 cell-1"
+        grid-template-areas: "cell-1 cell-1 cell-1"
                        "cell-2 cell-5 cell-6"
                        "cell-3 cell-5 cell-6"
                        "cell-4 cell-5 cell-6";
+    -ms-grid-rows:  10% 30% 30% 30%;
     grid-template-rows:  10% 30% 30% 30%; /* 4 строки */
     /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    -ms-grid-columns: 10% 30% 30% ;
     grid-template-columns: 10% 30% 30% ; /* 3 столбца */
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .biography-description {
@@ -331,11 +408,20 @@ header{
 
 .strong-container{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     list-style-type: none;
-    column-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
     height: 664px;
 }
 
@@ -349,21 +435,24 @@ header{
     position: absolute;
     left: -50px;
     top: 10px;
-    transform: rotate(-90deg) translate(-25%, 0%);
-}
-
-.avery-klein{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    -webkit-transform: rotate(-90deg) translate(-25%, 0%);
+        -ms-transform: rotate(-90deg) translate(-25%, 0%);
+            transform: rotate(-90deg) translate(-25%, 0%);
 }
 
 .strong-section-list{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     height: 664px;
     padding: 0px 9px 18px 9px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 28px;
 }
 
@@ -373,16 +462,39 @@ header{
 
 @supports (display: grid) {
     .strong-container {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-rows: 665px;
         grid-template-rows: 665px;
+        -ms-grid-columns: 350px 2% 350px 2% 395px 2% 350px;
         grid-template-columns: 350px 350px 395px 350px;
         grid-auto-flow: column;
-        align-items: end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
         gap: 2%;
+    }
+    .strong-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .strong-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    .strong-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+    .strong-container > *:nth-child(4) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
     }
 
     .section-title-vertical-t{
+        -ms-grid-row: 1;
         grid-row: 1;
+        -ms-grid-column: 2;
         grid-column: 2;
         justify-items: start;
     }
@@ -403,4 +515,3 @@ header{
 .no-mob-a-r-text{
     display: initial;
 }
-
