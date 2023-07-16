@@ -256,6 +256,7 @@ header{
     position: relative;
     background-image: url("../images/inside-weather.jpg");
     background-size: cover;
+    background-position: bottom;
 }
 
 .main-box{
@@ -383,7 +384,7 @@ header{
     .section-title-vertical-t{
         grid-row: 1;
         grid-column: 2;
-        justify-items: start;
+        align-self: end;
     }
 }
 
