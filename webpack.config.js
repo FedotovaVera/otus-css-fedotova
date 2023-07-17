@@ -50,9 +50,5 @@ module.exports = {
     open: true,
     port: 3000,
     hot: true,
-  },
-  
-  stats: {
-    children: true
   }
 };
