@@ -1,24 +1,24 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
-      "html-webpack-plugin": "^5.5.3",
-      "style-loader": "^3.3.3",
-      "webpack": "^5.88.1",
-      "webpack-cli": "^5.1.4",
-      "webpack-dev-server": "^4.15.1"
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
+    "lodash-webpack-plugin": "^0.11.6",
+    "squoosh-webpack-plugin": "^2.1.1",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
-      "http-server": "^14.1.1",
-      "image-webpack-loader": "^8.1.0",
-      "lodash": "^4.17.21",
-      "mini-css-extract-plugin": "^2.7.6",
-      "postcss": "^8.4.24",
-      "postcss-loader": "^7.3.3",
-      "postcss-preset-env": "^9.0.0",
-      "prettier": "^2.8.8",
-      "sass": "^1.63.6",
-      "sass-loader": "^13.3.2"
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.0"
   },
   "name": "otus-css-fedotova-1",
   "description": "Домашние работы по обучению в OTUS\r ## Hi there :v:\r :woman: My name is Vera.\r I am a student of the HTML/CSS course at OTUS :sunglasses:\r My homework will be stored here :muscle:",
