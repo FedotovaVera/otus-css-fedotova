@@ -1,4 +1,4 @@
-name: Test Project
+name: Prod Project
 
 on:
   push:
