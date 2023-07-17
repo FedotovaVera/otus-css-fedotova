@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+      "html-webpack-plugin": "^5.5.3",
+      "style-loader": "^3.3.3",
+      "webpack": "^5.88.1",
+      "webpack-cli": "^5.1.4",
+      "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "html-loader": "^4.2.0",
+      "http-server": "^14.1.1",
+      "image-webpack-loader": "^8.1.0",
+      "lodash": "^4.17.21",
+      "mini-css-extract-plugin": "^2.7.6",
+      "postcss": "^8.4.24",
+      "postcss-loader": "^7.3.3",
+      "postcss-preset-env": "^9.0.0",
+      "prettier": "^2.8.8",
+      "sass": "^1.63.6",
+      "sass-loader": "^13.3.2"
+  },
+  "name": "otus-css-fedotova-1",
+  "description": "Домашние работы по обучению в OTUS\r ## Hi there :v:\r :woman: My name is Vera.\r I am a student of the HTML/CSS course at OTUS :sunglasses:\r My homework will be stored here :muscle:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack -c webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "otus-css-fedotova"
+  },
+  "author": "Vera Fedotova",
+  "license": "ISC",
+  "keywords": []
+}
