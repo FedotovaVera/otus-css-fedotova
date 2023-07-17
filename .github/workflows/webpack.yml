@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: |
         npm install
-        npx run build-dev
+        npm run build-dev
         
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
