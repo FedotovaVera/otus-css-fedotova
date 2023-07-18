@@ -2,9 +2,9 @@ name: Prod Project
 
 on:
   push:
-    branches: [ "automatization" ]
+    branches: [ "support" ]
   pull_request:
-    branches: [ "automatization" ]
+    branches: [ "support" ]
 
 permissions:
   contents: write
