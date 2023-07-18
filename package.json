@@ -25,10 +25,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-webpack": "webpack -c webpack.config.js",
-    "start": "webpack serve",
-    "build-dev": "webpack -c webpack.config.js",
-    "build-prod": "webpack -c webpack.config.prod.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-prod": "webpack -c webpack.prod.config.js",
+    "build-dev": "webpack serve -c webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
