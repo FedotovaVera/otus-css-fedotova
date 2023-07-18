@@ -26,7 +26,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-prod": "webpack -c webpack.prod.config.js",
+    "build-prod": "webpack -c webpack.config.prod.js",
     "build-dev": "webpack serve -c webpack.dev.config.js"
   },
   "repository": {
